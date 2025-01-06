@@ -51,11 +51,7 @@
     </style>
 </head>
 <body>
-    <div id="popup">
-        <p style="font-size: 1.5em;">🩷 Velkommen til Såpe Patruljen! 🩷</p>
-        <p>Du godtar at du kan IKKJE selge produkter du kjøper fra oss. Klikk "Godta" for å fortsette.</p>
-        <button onclick="closePopup()">Godta</button>
-    </div>
+    
 
     <h1>🩷 Såpe Patruljen 🩷</h1>
     <h2>🎀 Kjøping av såpe! 🎀</h2>
@@ -67,10 +63,10 @@
     <hr>
 
     <div class="product">
-        <img src="sape1.png" alt="Såpe 1" onclick="showEmoji('🐙')">
-        <img src="sape2.png" alt="Såpe 2" onclick="showEmoji('🐝')">
-        <img src="sape3.png" alt="Såpe 3" onclick="showEmoji('❤️')">
-        <img src="sape4.png" alt="Såpe 4" onclick="showEmoji('🍩')">
+        <img src="sape1.png" alt="Såpe 1" 
+        <img src="sape2.png" alt="Såpe 2" 
+        <img src="sape3.png" alt="Såpe 3" 
+        <img src="sape4.png" alt="Såpe 4" 
     </div>
 
     <hr>
@@ -87,22 +83,6 @@
         <p>© Såpe Patruljen - Rettigheter reservert</p>
     </footer>
 
-    <script>
-        function closePopup() {
-            document.getElementById("popup").style.display = "none";
-        }
-        function showEmoji(emoji) {
-            const emojiElement = document.createElement("div");
-            emojiElement.textContent = emoji;
-            emojiElement.style.position = "fixed";
-            emojiElement.style.top = "50%";
-            emojiElement.style.left = "50%";
-            emojiElement.style.transform = "translate(-50%, -50%)";
-            emojiElement.style.fontSize = "5em";
-            emojiElement.style.zIndex = "1000";
-            document.body.appendChild(emojiElement);
-            setTimeout(() => { emojiElement.remove(); }, 2250);
-        }
-    </script>
+  
 </body>
 </html>
